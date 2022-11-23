@@ -1,0 +1,21 @@
+{
+  "name": "city-pizza-backend",
+  "version": "1.0.0",
+  "description": "pizza app server with mysql database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node utils/create.database.js",
+    "start": "nodemon -r dotenv/config index.js"
+  },
+  "author": "Dan Hope",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
